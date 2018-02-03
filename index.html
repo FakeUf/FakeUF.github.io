@@ -1,9 +1,786 @@
-<div class="wrap">
-	<div class="circle">
-		<div class="eye"></div>
-		<div class="wings">
-	</div>
-	<div class="left-leg"></div>
-	<div class="right-leg"></div>
-	 </div>
-	 </div>
+
+
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <title>Artix&acute;s Character Page</title>
+    
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta property="og:title" content="Artix&acute;s Character Page" />
+    <meta property="og:site_name" content="AdventureQuest Worlds Character Page"/>
+    <meta name="description" content="Adventure Quest World's character page for Artix." />
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/jasny-offcanvas.min.css" />
+    <link rel="stylesheet" href="/css/aqw-char.css?version=2.5" />
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+ 
+    <link rel="canonical" href="http://www.aq.com/character.asp?id=Artix" />
+</head>
+
+<body class="row-offcanvas row-offcanvas-right">
+<!-- fb like -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=163679093835836";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- /fb like -->
+
+    <!-- Navigation -->  
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- AE Bar on Desktop-->
+        <div class="hidden-xs bg-black">
+          <div class="container aenetwork-bar text-light">
+            <div class="row">
+                <div class="col-lg-5 col-sm-3 nopadding-left"><a class="ae-logo" href="//www.artix.com/" target="_blank" title="Artix.com Home"></a></div>
+              <div class="col-lg-7 col-sm-9 nopadding-right server-info">
+              	<div>
+                    <div>8866 Players Online </div>
+                    <div>Server Time: 5:00:13 PM EST</div>
+                    <a class="btn-xs" href="/help/"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Help</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /AE Bar on Desktop-->
+        
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu-fixed-right" data-canvas="body" onClick="CheckToggle()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- AE Button -->
+                <div class="visible-xs-block">
+                	<a class="ae-logo" href="//www.artix.com" target="_blank"></a>
+                </div>
+                <a class="navbar-brand" href="/default.asp"><img class="img-responsive" src="/img/network/logo-navbar.png" alt="AdventureQuest Worlds Logo"/></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-offcanvas offcanvas navbar-right navmenu-fixed-right" role="navigation">
+              <ul class="nav navbar-nav navmenu-nav">
+                  
+                <li class="visible-xs-block text-center offcanvas-title">
+                <a href="//www.aq.com/"><img src="/shared/images/offcanvas/aq-com.jpg" class="img-responsive center-block" alt="AQ.com"></a></li>
+
+                <li class="visible-xs-block padding"><a class="btn btn-aqred" href="/play-now/">PLAY</a></li>
+
+                <li class="dropdown">
+                  <a href="#" id="NavGame" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Game <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="//www.aq.com/">Home</a></li>
+                    <li><a href="/about.asp">About</a></li>
+                    <li><a href="/lore/guides/AQWRules">Game Rules</a></li>
+                    <li><a href="/lore/">Lorepedia</a></li>
+                    <li><a href="/character.asp">Character Page</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/pages/invite.asp">Invite Friends</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//aqwwiki.wikidot.com/" target="_blank">AQWorlds Wiki</a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavCommunity" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/gamedesignnotes/">Design Notes</a></li>
+                    <li><a href="//www.artix.com/" target="_blank">Artix News</a></li>
+                    <li><a href="http://forums2.battleon.com/" target="_blank">Forums</a></li>
+                    <li><a href="//www.artix.com/community/connect/" target="_blank">Become an Instant Fan!</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//www.facebook.com/AQWorldsMMO/" target="_blank"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a></li>
+                    <li><a href="https://twitter.com/ArtixKrieger" target="_blank"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a></li>
+                    <li><a href="//www.youtube.com/user/BattleOnGames" target="_blank"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a></li>
+                    <li><a href="https://plus.google.com/105436614387578296785" target="_blank"><i class="fa fa-google fa-fw"> </i><span class="network-name">Google+</span></a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavAccount" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/landing/">Create Your Account</a></li>
+                    <li><a href="/acct">Manage Account</a></li>
+                    <li><a href="/order-now/direct/">Upgrade Your Account</a></li>
+                    <li><a href="/account/verify-shops.asp">Verification Shops</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/help/">Help</a></li>
+                    <li><a href="/account/lost-password.asp">Forgot Password</a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="/parents/default.asp">For Parents</a></li>
+                  </ul>
+                </li>
+                                
+                <li class="dropdown">
+                  <a href="#" id="NavShop" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Shop <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/order-now/direct/"><span class="fa"><img src="/shared/images/icons/shopnav-membership.png"  alt="Buy Membership"></span><span> Buy Membership </span></a></li>
+                    <li><a href="/order-now/direct/"><span class="fa"><img src="/shared/images/icons/shopnav-adventurecoins.png" alt="Get AdventureCoins"></span><span> AdventureCoins </span></a></li>
+                    <li><a href="/aextras/offers/"><span class="fa"><img src="/shared/images/icons/shopnav-freeacs.png" alt="Earn Free ACs"></span><span> Earn Free ACs</span></a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//portal.battleon.com/store/points/" target="_blank"><span class="fa"><img src="/shared/images/icons/shopnav-artixpoints.png" alt="Get Artix Points"></span><span> Get Artix Points </span></a></li>
+                    <li class="divider hidden-xs"></li>
+                    <li><a href="//www.heromart.com/" target="_blank">
+                    	<span class="fa"><img src="/shared/images/icons/shopnav-heromart.png" alt="Shop HeroMart!"></span><span> HeroMart <br>
+                    	<small>T-shirts & More</small></span></a></li>
+                  </ul>
+                </li>
+                
+                <li class="hidden-xs"><a class="btn btn-play btn-signup" href="/landing/">Free Sign Up</a></li>
+                <li class="hidden-xs"><a class="btn btn-play btn-aqred" href="/play-now/">PLAY</a></li>
+
+              </ul>
+              
+              <!-- AE Menu -->
+              <div class="visible-xs-block navbar-aenetwork">
+                  <ul class="nav navbar text-light">
+                      
+                    <li class="visible-xs-block divider"></li>
+                    <li class="text-center margin-20"><a href="//www.artix.com/" target="_blank">
+                    <img src="/shared/images/offcanvas/artix-com.jpg" class="img-responsive center-block" alt="Artix.com"></a></li>
+    
+                    <li class="divider"></li>
+                    <li><h4>Mobile Games</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.aqdragons.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/dragons.jpg" alt="Dragons"/>Dragons</a>
+                    </li>
+                    <li>
+                        <a href="http://battlegems.artix.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/battlegems.jpg" alt="BattleGems"/>BattleGems</a>
+                    </li>
+                    <li>
+                        <a href="http://www.aq3d.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aq3d.jpg" alt="AQ3D"/>AQ3D</a>
+                    </li>
+    
+                    <li class="divider margintop-15"></li>
+                    <li><h4>Websites</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.artix.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/artix.jpg" alt="Artix.com"/>Artix.com</a>
+                    </li>
+                    <li>
+                        <a href="https://www.heromart.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/heromart.jpg" alt="HeroMart"/>HeroMart.com <small>- Shop!</small></a>
+                    </li>
+                    <li>
+                        <a href="https://portal.battleon.com/store/points/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/artixpoints.jpg" alt="Artix Points"/>Get Artix Points</a>
+                    </li>
+    
+                    <li class="divider margintop-15"></li>
+                    <li><h4>Web Games</h4></li>
+                    <li class="divider"></li>
+    
+                    <li>
+                        <a href="http://www.aq.com" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aqworlds.jpg" alt="AQWorlds"/>AQWorlds</a>
+                    </li>
+                    <li>
+                        <a href="http://epicduel.artix.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/epicduel.jpg" alt="EpicDuel"/>EpicDuel</a>
+                    </li>
+                    <li>
+                        <a href="http://www.dragonfable.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/dragonfable.jpg" alt="DragonFable"/>DragonFable</a>
+                    </li>
+                    <li>
+                        <a href="http://www.mechquest.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/mechquest.jpg" alt="Mechquest"/>Mechquest</a>
+                    </li>
+                    <li>
+                        <a href="http://www.battleon.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/aqclassic.jpg" alt="AdventureQuest"/>AdventureQuest</a>
+                    </li>
+                    <li>
+                        <a href="http://oversoul.artix.com/" target="_blank">
+                        <img class="img-responsive center-block" src="/shared/images/offcanvas/oversoul.jpg" alt="OverSoul"/>OverSoul</a>
+                    </li>
+                  </ul>
+              </div>
+              
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- Header from homepage -->
+    <div class="intro-header">
+      <div class="container nopadding-sides">
+        <div class="row">
+          <div class="col-sm-12">
+              
+            <!-- logo & btns for large screens -->
+            <div class="intro-message hidden-xs">
+              <h1><a href="http://www.aq.com/"><img src="img/network/logo-md-aqw.png" class="img-responsive center-block hidden-sm" alt="AdventureQuest Worlds!"></a></h1>
+                
+                <div class="cta">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <a class="create" href="/landing/"></a>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <a class="play" href="/play-now/"></a>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <a class="upgrade" href="/order-now/direct/"></a>
+                  </div>
+                </div>
+            </div>
+            <!-- /.intro-message lg -->
+              
+            <!-- xs -->
+            <div class="intro-message visible-xs-block">
+                
+                <a class="play" href="/play-now/"></a>
+                <div class="margintop-30">
+                    <a class="btn btn-aqred" href="/landing/">Create Free Account</a>
+                    <a class="btn btn-aqred" href="/order-now/direct/">Upgrades &amp; ACs</a>
+                </div>
+                
+            </div>
+            <!-- /.intro-message xs -->              
+              
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.intro-header -->
+
+<!-- /End Header from homepage -->     
+
+    <div class="scroll-top"></div>
+
+    <!-- section: content -->
+    <section id="main-content">
+      <div class="container">
+        <div class="row">
+
+            <!-- 1st col: main -->
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+
+                <!-- main: 1st cel -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                	<!-- default, no char -->
+                    
+
+                    <!-- char returned -->
+                        <h1 class="nomargin text-center">Artix's Character Page</h1>
+
+                    
+                </div>
+
+                <!-- 1st col, 2nd cel -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+                    
+        <div id="flashContent"></div>
+		<script src="/swfobject.js"></script>
+        <script>
+			<!-- Adobe recommends that developers use SWFObject2 for Flash Player detection. -->
+			<!-- For more information see the SWFObject page at Google code (http://code.google.com/p/swfobject/). -->
+			<!-- Information is also available on the Adobe Developer Connection Under "Detecting Flash Player versions and embedding SWF files with SWFObject 2" -->
+			<!-- Set to minimum required Flash Player version or 0 for no version detection -->
+			var swfVersionStr = "9.0.0";
+			<!-- xiSwfUrlStr can be used to define an express installer SWF. -->
+			var xiSwfUrlStr = "";
+			var flashvars = ["&intColorHair=3678742&intColorSkin=15121555&intColorEye=6041135&intColorTrim=5398908&intColorBase=8556972&intColorAccessory=10027008&ia1=14226&strGender=M&strHairFile=hair/M/Normal.swf&strHairName=Normal&strName=artix&intLevel=61&strClassName=Paladin&strClassFile=paladin_skin.swf&strClassLink=Paladin&strArmorName=Paladin&strWeaponFile=items/axes/axe05.swf&strWeaponLink=&strWeaponType=Axe&strWeaponName=Blinding Light of Destiny III&strCapeFile=items/capes/redcape.swf&strCapeLink=RedCape&strCapeName=Red Cape&strHelmFile=none&strHelmLink=none&strHelmName=&strPetFile=items/pets/ArmoredDaimyoBattle.swf&strPetLink=ArmoredDaimyoBattle&strPetName=Armored Daimyo&bgindex=6&strFaction=Good"];
+			var params = {}; 
+			params.quality = "high";
+			params.bgcolor = "#fef0c1";
+			params.play = "true";
+			params.loop = "true";
+			params.wmode = "opaque";
+			params.scale = "showall";
+			params.menu = "true";
+			params.devicefont = "false";
+			params.salign = "";
+			params.allowscriptaccess = "always";
+			var attributes = {};
+			attributes.id = "character5";
+			attributes.name = "character5";
+			attributes.class = "center-block"
+			
+			swfobject.embedSWF("http://cdn.aqworlds.com/flash/chardetail/character5.swf", "flashContent", "550", "350", swfVersionStr, xiSwfUrlStr, flashvars, params, attributes);
+		</script>
+
+            <div class="text-center"><div class="fb-like" data-href="http://www.aq.com/char/Artix" data-layout="button" 
+            data-action="like" data-show-faces="false" data-share="true"></div></div>
+        
+            
+		            <div class="well well-sm margin-20"><h2 class="text-center nomargin">Achievements</h2></div>
+						<div class="achievements">
+							
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Founder' data-content='Awarded to those who became an upgraded Legend within the first month of AQW&acute;s release October 10th, 2008 to November 17th, 2008!'><img alt='' width='90' height='82' src='/images/Icons/badges/founder.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Beta Character' data-content='Awarded to those who created an account during our Beta release (accounts created on or before October 10th, 2008)!'><img alt='' width='90' height='82' src='/images/Icons/badges/beta-char.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Beta Tester' data-content='Awarded to those who helped out during our Beta release (accounts created on or before October 10th, 2008 and helped test in the beta stages)!'><img alt='' width='90' height='82' src='/images/Icons/badges/beta-tester.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Dragon Hero' data-content='Awarded to those who became a Legend within 72 hrs of account creation.'><img alt='' width='90' height='82' src='/images/Icons/badges/dragon-hero.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Axe Master' data-content='Awarded to those who have purchased at least 3 months worth of AQW membership.'><img alt='' width='90' height='82' src='/images/Icons/badges/axe-master.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Chaos Shaper' data-content='Awarded to those who have purchased at least 15 months worth of AQW membership.'><img alt='' width='90' height='82' src='/images/Icons/badges/chaos-shaper.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Member' data-content='Awarded to those who have upgraded their accounts.'><img alt='' width='90' height='82' src='/images/Icons/badges/member.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='1st Upholder' data-content='An honorable award presented to those who helped support AQWorlds during their first birthday on October 10th, 2009! Thank you for celebrating with us!'><img alt='' width='90' height='82' src='/images/Icons/badges/upholder1.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='2nd Upholder' data-content='An honorable award presented to those who helped support AQWorlds on their second birthday on 10-10-10! This date, this badge, and your support will never be forgotten!'><img alt='' width='90' height='82' src='/images/Icons/badges/upholder2.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='3rd Upholder' data-content='An honorable award presented to those who helped support AQWorlds on their third birthday on October 10th, 2011! Thank you for celebrating with us!'><img alt='' width='90' height='82' src='/images/Icons/badges/upholder3.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='4th Upholder' data-content='An honorable award presented to those who helped support AQWorlds on our 4th birthday on October 10th, 2012! Thank you for celebrating with us!'><img alt='' width='90' height='82' src='/images/Icons/badges/upholder4.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='5th Upholder' data-content='An honorable award presented to those who helped support AQWorlds on our 5th birthday on October 10th, 2013! Thank you for celebrating with us!'><img alt='' width='90' height='82' src='/images/Icons/badges/upholder5.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='6th Upholder' data-content='An honorable award presented to those who helped support AQWorlds on our 6th birthday on October 10th, 2014! Thank you for celebrating with us!'><img alt='' width='90' height='82' src='/images/Icons/badges/upholder6.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='7th Upholder' data-content='An honorable award presented to those who helped support AQWorlds on our 7th birthday on October 10th, 2015! Thank you for celebrating with us!'><img alt='' width='90' height='82' src='/images/Icons/badges/upholder7.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='8th Upholder' data-content='An honorable award presented to those who helped support AQWorlds in October 2016! Thank you for celebrating with us!'><img alt='' width='90' height='82' src='/images/Icons/badges/upholder8.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='9th Upholder' data-content='An honorable award presented to those who helped support AQWorlds in October 2017! Thank you for celebrating with us!'><img alt='' width='90' height='82' src='/images/Icons/badges/9thupholderbadge.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Honorable Hero' data-content='You&acute;ve unlocked this badge by not getting a mute or ban in 2014. It pays to play nice in AQWorlds!'><img alt='' width='90' height='82' src='/images/Icons/badges/honorable-hero.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Honorable Hero' data-content='You&acute;ve unlocked this badge by not getting a mute or ban in 2015. It pays to play nice in AQWorlds!'><img alt='' width='90' height='82' src='/images/Icons/badges/honorable-hero-15.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Honorable Hero' data-content='You&acute;ve unlocked this badge by not getting a mute or ban in 2016. It pays to play nice in AQWorlds!'><img alt='' width='90' height='82' src='/images/Icons/badges/honorablehero2016-2.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Honorable Hero' data-content='You&acute;ve unlocked this badge by not getting a mute or ban in 2017. It pays to play nice in AQWorlds!'><img alt='' width='90' height='82' src='/images/Icons/badges/honorablehero2017badge.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Friday the 13th' data-content='Awarded to those who have participated in the Friday 13th Events.'><img alt='' width='90' height='82' src='/images/Icons/badges/friday13.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='PTR Tester' data-content='Awarded to players who have helped with PTR Testing'><img alt='' width='90' height='82' src='/images/Icons/badges/ptr.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Eye Was There' data-content='Awarded to those who were present during the One-Eyed Doll LIVE Musical Event (June 25th 2010)!'><img alt='' width='90' height='82' src='/images/Icons/badges/eye-was-there.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Stubborn' data-content='You stubbornly denied the possibility your path could possibly be the WRONG path.'><img alt='' width='90' height='82' src='/images/Icons/badges/stubborn.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Ctrl Alt Delete' data-content='This badge was awarded to you for helping Ethan from Ctrl + Alt+ Del recover the Winter-een-mas crown!'><img alt='' width='90' height='82' src='/images/Icons/badges/ctrl-alt-delete.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Chaos Pack' data-content='Your AQW Battle Card deck has been modified with the power of Chaos! The all-seeing eye of Chaos is now watching your back.'><img alt='' width='90' height='82' src='/images/Icons/badges/pack-chaos.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Doom Pack' data-content='Your AQW Battle Card deck has been modified with the power of darkness! Vordred's Sword is yours!'><img alt='' width='90' height='82' src='/images/Icons/badges/pack-doom.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Very Important Player' data-content='Grants access to the VIP Shop. Awarded to anyone who has supported AQW with a 12 month membership since July 21st, 2011, or had an active year membership at the time.'><img alt='' width='90' height='82' src='/images/Icons/badges/vip.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Doomknight Overlord' data-content='Awarded to high ranking DoomKnights to allow access to the DoomKnight OverLord class, armor, helm, weapon and castle.  (Obtained from the Sepulchure Action Figure at HeroMart.com or Toys”R”Us.'><img alt='' width='90' height='82' src='/images/Icons/badges/doomknight-overlord.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Paladin Highlord' data-content='Awarded to high ranking Paladins to allow access to the Paladin HighLord class, armor, helm, weapon and castle.  (Obtained from the Artix Action Figure at HeroMart.com or Toys”R”Us.'><img alt='' width='90' height='82' src='/images/Icons/badges/paladin-highlord.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='PTR lag tester' data-content='Awarded to active AQW Members who helped the team test and reduce the lag in AQW.'><img alt='' width='90' height='82' src='/images/Icons/badges/PTR-lag-tester.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Endless Doom' data-content='You traveled through at least 100 rooms in Grimskull's Dugeon of Doom!'><img alt='' width='90' height='82' src='/images/Icons/badges/endless-doom.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Artist of Lore' data-content='You unlocked this badge for contributing to the Bestiary of Lore!'><img alt='' width='90' height='82' src='/images/Icons/badges/artist-of-lore.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Scribe of Lore' data-content='You unlocked this badge for contributing to the Bestiary of Lore!'><img alt='' width='90' height='82' src='/images/Icons/badges/scribe-of-lore.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Forsaken Warlock' data-content='You are a Forsaken Warlock! Even the Dragon Emperors must tread carefully when you are near!'><img alt='' width='90' height='82' src='/images/Icons/badges/forsaken-warlock.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='BrightFall Commander' data-content='You&acute;ve unlocked the BrightFall Commander badge by purchasing a 12 month upgrade!'><img alt='' width='90' height='82' src='/images/Icons/badges/brightfall-commander.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Golden Gladiator' data-content='You&acute;ve unlocked this badge by purchasing the Golden Gladiator package. May all your battles be victorious!'><img alt='' width='90' height='82' src='/images/Icons/badges/golden-gladiator.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='AQ3D Tester' data-content='You unlocked this badge for helping test the AQ3D tech demo!'><img alt='' width='90' height='82' src='/images/Icons/badges/techdemo.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='Undead Assault' data-content='The Paladins of Lore (and Daimyo!) salute you, Hero.'><img alt='' width='90' height='82' src='/images/Icons/badges/undeadassault.jpg' /></a>
+<a role='button' data-toggle='popover' data-trigger='hover' data-placement='bottom' data-container='body' title='PTR Server Tester' data-content='You were awarded this badge for helping test in the Server PTR, Phase 2. Thank you, Hero!'><img alt='' width='90' height='82' src='/images/Icons/badges/ptr-server-tester.jpg' /></a>
+                        </div>
+		        
+                    <div class="well well-sm margin-20"><h2 class="text-center nomargin">Inventory</h2></div><div class='row items'><div class='col-md-6 col-sm-6 col-xs-12'><h2 class='nomargin-bot'>Items</h2><a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Copper+PvP+Amulet+%2B500'><div class='normItem necklace'>Copper PvP Amulet +500</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Bunny+on+your+Back+09'><div class='normItem cape'>Bunny on your Back 09</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Doom+Rocket+Pack'><div class='acItem cape'>Doom Rocket Pack</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Guardian+Shadow'><div class='acItem cape'>Guardian Shadow</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Red+Cape'><div class='normItem cape'>Red Cape</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Doom+Realm+Guardian+Helm'><div class='acItem helm'>Doom Realm Guardian Helm</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Jouster+Helm'><div class='acItem helm'>Jouster Helm</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Templar%27s+Helm+of+Light'><div class='normItem helm'>Templar's Helm of Light</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Wolfwing+Mask'><div class='normItem helm'>Wolfwing Mask</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Fortune+Ticket'><div class='acItem item'>Fortune Ticket</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Guard+Potion'><div class='normItem item'>Guard Potion</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Health+Potion'><div class='normItem item'>Health Potion</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Honor+Potion'><div class='normItem item'>Honor Potion</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Magic+Treasure+Chest+Key'><div class='acItem item'>Magic Treasure Chest Key</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Power+Gem'><div class='acItem item'>Power Gem</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Unstable+Protection+Potion'><div class='normItem item'>Unstable Protection Potion</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Cubes'><div class='acItem questitem'>Cubes</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/CLASS+Boost%21+%281+hr%29'><div class='acItem serveruse'>CLASS Boost! (1 hr)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Daily+XP+Boost%21+%281+hr%29'><div class='acItem serveruse'>Daily XP Boost! (1 hr)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/REPUTATION+Boost%21+%281+hr%29'><div class='acItem serveruse'>REPUTATION Boost! (1 hr)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Armored+Daimyo'><div class='memItem pet'>Armored Daimyo</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Armored+Platinum+Dragon'><div class='acItem pet'>Armored Platinum Dragon</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Black+Spider'><div class='memItem pet'>Black Spider</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Boca'><div class='memItem pet'>Boca</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Chaotic+Armored+Platinum+Dragon'><div class='acItem pet'>Chaotic Armored Platinum Dragon</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Daimyo'><div class='memItem pet'>Daimyo</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Deady'><div class='acItem pet'>Deady</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Dire+Wolf'><div class='memItem pet'>Dire Wolf</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Dracolich+Baby+Dragon'><div class='memItem pet'>Dracolich Baby Dragon</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Kitten'><div class='memItem pet'>Kitten</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Mini+Grenwog+09'><div class='memItem pet'>Mini Grenwog 09</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Onyx+Platinum+Dragon'><div class='acItem pet'>Onyx Platinum Dragon</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Penguin'><div class='memItem pet'>Penguin</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Platinum+Armored+Platinum+Dragon'><div class='acItem pet'>Platinum Armored Platinum Dragon</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Platinum+Dragon'><div class='acItem pet'>Platinum Dragon</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Silent+Chuckles+Skull'><div class='acItem pet'>Silent Chuckles Skull</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Trollolol+Moglin'><div class='acItem pet'>Trollolol Moglin</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Vorpal+Bunny+09'><div class='memItem pet'>Vorpal Bunny 09</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Blinding+Light+of+Destiny+III'><div class='acItem axe'>Blinding Light of Destiny III</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Heart+Naval+Guitar'><div class='acItem axe'>Heart Naval Guitar</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Prized+Tomahawk+of+the+Revered'><div class='acItem axe'>Prized Tomahawk of the Revered</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Wrath+of+the+Werepyre'><div class='memItem axe'>Wrath of the Werepyre</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Default+Dagger'><div class='normItem dagger'>Default Dagger</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Destructo%2DTacos+11'><div class='normItem dagger'>Destructo-Tacos 11</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Grasp+of+the+Void'><div class='normItem dagger'>Grasp of the Void</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Sketchy+Shotgun'><div class='normItem gun'>Sketchy Shotgun</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Unarmed'><div class='memItem mace'>Unarmed</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Undead+Potion+of+Hate'><div class='normItem mace'>Undead Potion of Hate</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Spear+of+Dragon%27s+Vengeance'><div class='acItem polearm'>Spear of Dragon's Vengeance</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/1st+Lord+of+Chaos+Staff'><div class='normItem staff'>1st Lord of Chaos Staff</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Deadly+Hydra+Staff'><div class='normItem staff'>Deadly Hydra Staff</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Metallic+Crescent+Staff'><div class='normItem staff'>Metallic Crescent Staff</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Mystic+Pencil+of+Endless+Scribbles'><div class='normItem staff'>Mystic Pencil of Endless Scribbles</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Slimey+Staff'><div class='normItem staff'>Slimey Staff</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Staff+of+Inversion'><div class='memItem staff'>Staff of Inversion</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Wizard%27s+Hydra+Staff'><div class='memItem staff'>Wizard's Hydra Staff</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Chainsaw+Hand+09'><div class='acItem sword'>Chainsaw Hand 09</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Default+Sword'><div class='normItem sword'>Default Sword</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Dragonlord%27s+Loss'><div class='normItem sword'>Dragonlord's Loss</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Golden+Star+Sword'><div class='acItem sword'>Golden Star Sword</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Guardian+Blade'><div class='normItem sword'>Guardian Blade</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Hebi+Twintana'><div class='acItem sword'>Hebi Twintana</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Onyx+Star+Sword'><div class='acItem sword'>Onyx Star Sword</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Platinum+Star+Sword'><div class='acItem sword'>Platinum Star Sword</div></a>
+</div><div class='col-md-6 col-sm-6 col-xs-12'><h3 class='nomargin-bot'>Classes & Armors</h3><a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/CardClasher'><div class='acItem class'>CardClasher (Rank 10)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Classic+Alpha+Pirate'><div class='normItem class'>Classic Alpha Pirate (Rank 1)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/DoomKnight'><div class='memItem class'>DoomKnight (Rank 10)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Healer+%28Rare%29'><div class='normItem class'>Healer (Rare) (Rank 2)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/No+Class'><div class='normItem class'>No Class (Rank 3)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Paladin'><div class='memItem class'>Paladin (Rank 10)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/ProtoSartorium'><div class='memItem class'>ProtoSartorium (Rank 1)</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Battle+Swimwear'><div class='normItem armor'>Battle Swimwear</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Chartreuse+Paladin'><div class='memItem armor'>Chartreuse Paladin</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Doom+Realm+Guardian'><div class='acItem armor'>Doom Realm Guardian</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Doom+Trislayer'><div class='acItem armor'>Doom Trislayer</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Ebil+Dread+Paladin+09'><div class='acItem armor'>Ebil Dread Paladin 09</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Hand%2DDrawn+J6+Armor'><div class='memItem armor'>Hand-Drawn J6 Armor</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Undead+Paladin+%28Rare%29'><div class='acItem armor'>Undead Paladin (Rare)</div></a>
+</div></div><div class='row items'><div class='well well-sm margin-20'><h2 class='nomargin text-center'>Castles & Houses</h2></div><div class='col-md-6 col-sm-6 col-xs-12'><h3 class='nomargin-bot'>Castles & Houses</h3><a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Bright+Fortress'><div class='acItem house'>Bright Fortress</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Keep'><div class='memItem house'>Keep</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Paladin%27s+Castle'><div class='acItem house'>Paladin's Castle</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Tudor'><div class='memItem house'>Tudor</div></a>
+<h3 class='margintop-30 nomargin-bot'>Wall Items</h3><a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Guardian+Blade'><div class='acItem wallitem'>Guardian Blade</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Wall+Mirror'><div class='memItem wallitem'>Wall Mirror</div></a>
+</div><div class='col-md-6 col-sm-6 col-xs-12'><h3 class='nomargin-bot'>Floor Items</h3><a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Chochinobake'><div class='normItem flooritem'>Chochinobake</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Gold+Zard+Statue'><div class='normItem flooritem'>Gold Zard Statue</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Horse'><div class='acItem flooritem'>Horse</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Jimmy+The+Eye'><div class='acItem flooritem'>Jimmy The Eye</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/King%27s+Throne'><div class='memItem flooritem'>King's Throne</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Pactagonal+Knight+Statue'><div class='acItem flooritem'>Pactagonal Knight Statue</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Pactagonal+Knight+Statue'><div class='acItem flooritem'>Pactagonal Knight Statue</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Piano'><div class='memItem flooritem'>Piano</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Pile+of+Boxes'><div class='memItem flooritem'>Pile of Boxes</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Pillar+of+Fire'><div class='memItem flooritem'>Pillar of Fire</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Plain+Grey+Rug'><div class='memItem flooritem'>Plain Grey Rug</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Portal+To+The+Unknown'><div class='memItem flooritem'>Portal To The Unknown</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Red+Drapes'><div class='memItem flooritem'>Red Drapes</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Red+Drapes'><div class='memItem flooritem'>Red Drapes</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Rotating+Floor+Map'><div class='acItem flooritem'>Rotating Floor Map</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Round+Wooden+Table'><div class='memItem flooritem'>Round Wooden Table</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Silver+Sneevil+Statue'><div class='normItem flooritem'>Silver Sneevil Statue</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Silver+Undead+Statue'><div class='normItem flooritem'>Silver Undead Statue</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Silver+Zard+Statue'><div class='normItem flooritem'>Silver Zard Statue</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Stone+Fireplace'><div class='acItem flooritem'>Stone Fireplace</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Stone+Pillar+with+Banner'><div class='memItem flooritem'>Stone Pillar with Banner</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Stuffed+Neko+Matta'><div class='memItem flooritem'>Stuffed Neko Matta</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Table+of+Food'><div class='normItem flooritem'>Table of Food</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Turkey+Bomb'><div class='acItem flooritem'>Turkey Bomb</div></a>
+<a class='item' target='_blank' href='http://aqwwiki.wikidot.com/search:site/a/p/q/Undead+Coffin'><div class='acItem flooritem'>Undead Coffin</div></a>
+</div></div>
+                </div>
+            </div>
+            <!-- /1st col: main -->
+
+            <!-- 2nd col: right side -->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 right-side">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nopadding-sides">
+    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=163679093835836";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="text-center">
+    	<div class="fb-page" data-href="https://www.facebook.com/AQWorldsMMO/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AQWorldsMMO/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AQWorldsMMO/">AdventureQuest Worlds</a></blockquote></div>
+    </div>
+    
+	<!-- aq3d -->
+    <a href="//www.aq3d.com/?utm_source=AQW_HomePage&utm_medium=banner&utm_content=sidepromo&utm_campaign=AQ3D_OpenBeta" target="_blank"><img src="/img/network/games/side-game-aq3d-ob350px.jpg" style="width:100%" class="margintop-15 img-responsive center-block img-rounded" alt="AdventureQuest 3D"/></a>
+
+    <!-- HeroMart Ad Rotation -->
+    
+        <a href="https://www.heromart.com/collections/2018-calendar-shop" target="_blank"><img src="/shared/images/network/2018-calendar-heromart.jpg" class="img-responsive center-block img-rounded" alt="HeroMart"></a>
+    
+
+    <!-- char lookup -->
+    <div class="well well-sm clearfix margintop-15">
+        <div class="title">AdventureQuest Worlds</div>
+        
+        <!-- acs & hm -->
+        <a href="/order-now/direct/"><img src="/img/network/shop/side-acs.png" class="img-responsive center-block" alt="Get AdventureCoins!"></a>
+        <a href="https://www.aq.com/aextras/offers/"><img src="/img/network/shop/side-freeacs.png" class="img-responsive center-block" alt="Earn AdventureCoins"></a>
+
+        <div class="title">Character Lookup</div>
+            <a class="btn btn-aqred center-block" href="/character.asp">Search Character Page</a>
+    </div>    
+    
+    <!-- network games -->
+    <div class="well well-sm text-center">
+        <div class="title">Artix Web Games</div>
+        <a href="http://www.dragonfable.com" target="_blank"><img src="/img/network/games/side-game-df.png" class="img-responsive center-block" alt="DragonFable"></a>
+        <a href="http://www.mechquest.com" target="_blank"><img src="/img/network/games/side-game-mq.png" class="img-responsive center-block" alt="MechQuest"></a>
+        <a href="http://www.epicduel.com" target="_blank"><img src="/img/network/games/side-game-ed.png" class="img-responsive center-block" alt="EpicDuel"></a>
+        <a href="http://oversoul.artix.com" target="_blank"><img src="/img/network/games/side-game-os.png" class="img-responsive center-block" alt="OverSoul"></a>
+        <a href="http://www.battleon.com" target="_blank"><img src="/img/network/games/side-game-aqc.png" class="img-responsive center-block" alt="AdventureQuest"></a>
+        <a class="margin-20" href="http://www.artix.com/games/" target="_blank">See more Artix Games</a>
+    </div>
+    
+    <!-- mobile -->
+    <div class="well well-sm clearfix">
+      <div class="title">Artix Mobile Games</div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.aq3d.com" target="_blank"> <img src="/img/network/apps/side-app-aq3d.png" class="img-responsive center-block" alt="AQ3D"></a> AQ3D
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//battlegems.artix.com" target="_blank"> <img src="/img/network/apps/side-app-bg.png" class="img-responsive center-block" alt="BattleGems"></a> BattleGems
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="https://dt1f.app.link/AQ_Sidebar" target="_blank"> <img src="/img/network/apps/side-app-biobeasts.png" class="img-responsive center-block" alt="BioBeasts"></a> BioBeasts
+        </div>
+      </div>
+      <div class="row margintop-15">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.aqdragons.com" target="_blank"> <img src="/img/network/apps/side-app-dragons.png" class="img-responsive center-block" alt="Dragons"></a> Dragons
+          </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <a href="//www.undeadassault.com" target="_blank"> <img src="/img/network/apps/side-app-ua.png" class="img-responsive center-block" alt="Undead Assault"></a> Undead Assault
+          </div>
+      </div>
+    </div>
+    
+	<script>
+		window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+		  if (d.getElementById(id)) return t;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "//platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+		
+		  t._e = [];
+		  t.ready = function(f) {
+			t._e.push(f);
+		  };
+		
+		  return t;
+		}(document, "script", "twitter-wjs"));
+    </script>
+
+    <!-- right side: twitter -->
+    <div class="row sliver">
+        <a class="twitter-timeline" href="//twitter.com/ArtixKrieger" 
+            data-widget-id="581199712944029697"
+            data-chrome="nofooter"
+            data-tweet-limit="15">Tweets by @ArtixKrieger</a>
+    </div>
+    <!-- /twitter -->
+    
+	<!-- bb -->
+    <!--
+	<a href="https://dt1f.app.link/AQ_Sidebar" target="_blank" data-trackevent="t_biobeasts"><img src="/img/network/games/side-game-biobeasts-frostking.jpg" class="img-responsive center-block img-rounded" style="width:100%" alt="BioBeasts Frost King Bundle!"/></a>
+	-->
+
+</div>
+
+            </div>
+            <!-- /2nd col: right side -->
+
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    
+    <!-- profilepic modal -->
+    <div class="modal fade" id="profilepic" tabindex="-1" role="dialog" aria-labelledby="userprofilepic" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center">Artix's Profile Image</h4>
+          </div>
+          <div class="modal-body">
+            <img id="charpic" src="" class="img-responsive center-block" alt="Artix's Profile Image">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+            <a type="button" class="btn btn-aqred" href="" id="SaveProfileBTN" download="Profile-Artix.png">Save Image</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /profilepic modal -->
+    
+    <div class="scroll-bottom"></div>
+
+<!-- Footer -->
+    <footer>
+      <div class="container">
+          
+        <!-- lg only -->
+        <div class="row vertical-align visible-lg-block">            
+          <div class="col-lg-10 col-lg-offset-1">
+
+            <div class="col-lg-4 marginbot-20">
+                <div class="col-sm-10 col-sm-offset-1">
+                <a href="/policy/privacy.asp" class="btn btn-sm btn-black btn-block marginbot-10">Privacy Policy</a>
+                <a href="/policy/terms.asp" class="btn btn-sm btn-black btn-block marginbot-10">Terms of Service</a>
+                <a href="/help/" class="btn btn-sm btn-black btn-block marginbot-10">Help  &amp; Support</a>
+                <a href="/contact.asp" class="btn btn-sm btn-black btn-block">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 marginbot-20">
+                <a href="http://www.artix.com/" target="_blank"><img src="/img/network/footer-lg-logo.jpg" class="img-responsive center-block" alt="Artix Entertainment"></a>
+            </div>
+
+            <div class="col-lg-4 marginbot-20">
+              <div class="row vertical-align">
+              
+                  <div class="col-sm-6 nopadding">
+                    <ul class="text-right list-unstyled small">
+                      <li>Fantasy Violence</li>
+                      <li>Mild Suggestive Themes</li>
+                      <li>Online Interations not rated by ESRB.</li>
+                    </ul>
+                  </div>
+    
+                  <div class="col-sm-6">
+                    <img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive" alt="ESRB: Everyone +10">
+                  </div>
+                  
+              </div>
+            </div>
+              
+          </div>
+        </div>
+         <div class="row visible-lg-block">
+          <div class="col-sm-12">
+            <p class="copyright text-muted small">Copyright (&copy;) 2008 - 2018 <a href="http://www.artix.com/" target="_blank">Artix Entertainment, LLC.</a><br>
+              All games and characters are trademarks of <a href="http://www.artix.com/" target="_blank">Artix Entertainment</a>, LLC. All Rights Reserved.</p>
+          </div>
+        </div>
+        <!-- /.row lg only -->
+          
+        <!-- md & sm -->
+        <div class="hidden-lg">
+            <div class="row">
+    
+                <div class="col-md-12 col-sm-12 marginbot-20">
+                    <a class="visible-md-block" href="http://www.artix.com/" target="_blank"><img src="/img/network/footer-lg-logo.jpg" class="img-responsive center-block" alt="Artix Entertainment"></a>
+                    <a class="visible-sm-block visible-xs-block" href="http://www.artix.com/" target="_blank"><img src="/img/network/footer-sm-logo.jpg" class="img-responsive center-block" alt="Artix Entertainment"></a>
+                    <p class="copyright text-muted small">Copyright (&copy;) 2008 - 2015 <a href="http://www.artix.com/" target="_blank">Artix Entertainment, LLC.</a><br>
+                        All games and characters are trademarks of <a href="http://www.artix.com/" target="_blank">Artix Entertainment</a>, LLC. All Rights Reserved.</p>
+                </div>
+            </div>
+    		
+            <div class="hidden-xs">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 marginbot-20">
+                    <div class="col-sm-6 marginbot-10"><a href="/policy/privacy.asp" class="btn btn-sm btn-black btn-block">Privacy Policy</a></div>
+                    <div class="col-sm-6 marginbot-10"><a href="/policy/terms.asp" class="btn btn-sm btn-black btn-block">Terms of Service</a></div>
+                    <div class="col-sm-6 marginbot-10"><a href="/help/" class="btn btn-sm btn-black btn-block">Help  &amp; Support</a></div>
+                    <div class="col-sm-6 marginbot-10"><a href="/contact.asp" class="btn btn-sm btn-black btn-block">Contact Us</a></div>
+                </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 marginbot-20">
+                <div class="col-sm-6 text-right">
+                    <ul class="list-unstyled">
+                      <li>Fantasy Violence</li>
+                      <li>Mild Suggestive Themes</li>
+                      <li>Online Interations not rated by ESRB.</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 nopadding-sides"><img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive" alt="ESRB: Everyone +10"></div>
+              </div>
+            </div>
+            </div>
+
+			<div class="visible-xs-block">
+            <div class="row">
+                <div class="col-xs-12 marginbot-20">
+                    <a href="/policy/privacy.asp">Privacy Policy</a> |
+                    <a href="/policy/terms.asp">Terms of Service</a> |
+                    <a href="/help/">Help  &amp; Support</a> |
+               		<a href="/contact.asp">Contact Us</a> 
+                </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-xs-12 marginbot-20">
+                <div class="col-xs-12 text-center">
+                    <ul class="list-unstyled">
+                      <li>Fantasy Violence</li>
+                      <li>Mild Suggestive Themes</li>
+                      <li>Online Interations not rated by ESRB.</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 nopadding-sides"><img src="/img/network/footer-lg-esrbrating.jpg" class="img-responsive center-block" alt="ESRB: Everyone +10"></div>
+              </div>
+            </div>
+            </div>
+                	
+            
+        </div>
+        <!-- /.row md & sm -->          
+       
+      </div>    
+      <!-- /.container -->
+    </footer><!-- Google Tag Manager -->
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBP6TJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBP6TJ');</script>
+<!-- End Google Tag Manager -->
+
+
+    <!-- JavaScript --> 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/js/jasny-bootstrap.min.js" async defer></script>		
+    <script src="/js/offcanvas.js"></script>
+    <script>
+        $('.navmenu').offcanvas();
+		$(function () {
+		  $('[data-toggle="popover"]').popover()
+		})
+    </script>
+    <script src="/js/auto-expand.js" async></script>
+    <script src="/js/charactermodal.js"></script>
+	<span></span>
+</body>
+</html>
